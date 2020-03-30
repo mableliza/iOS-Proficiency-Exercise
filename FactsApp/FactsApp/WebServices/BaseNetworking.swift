@@ -34,7 +34,7 @@ class BaseNetworking {
     
     let dataTask = self.session.dataTask(with: request) { (data, response, error) in
       
-      DispatchQueue.main.async(execute: {
+      DispatchQueue.main.async {
         if let error = error {
           handler(nil,error)
         }
@@ -45,7 +45,7 @@ class BaseNetworking {
         self.handleResponseresponse(data: data) { data in
           handler(data, error)
         }
-      })
+      }
     }
     dataTask.resume()
   }
