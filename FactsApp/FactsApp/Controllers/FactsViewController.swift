@@ -34,8 +34,8 @@ class FactsViewController: UIViewController {
     tableView.translatesAutoresizingMaskIntoConstraints = false
     tableView.topAnchor.constraint(equalTo: layoutMargins.topAnchor).isActive = true
     tableView.bottomAnchor.constraint(equalTo: layoutMargins.bottomAnchor).isActive = true
-    tableView.leadingAnchor.constraint(equalTo: layoutMargins.leadingAnchor).isActive = true
-    tableView.trailingAnchor.constraint(equalTo: layoutMargins.trailingAnchor).isActive = true
+    tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+    tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
     tableView.dataSource = self
     tableView.tableFooterView = UIView()
     tableView.rowHeight = UITableView.automaticDimension
