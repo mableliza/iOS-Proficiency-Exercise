@@ -9,4 +9,6 @@
 import UIKit
 enum AppConstants {
   static let rowHeight: CGFloat = 80
+  static let titleFontSize: CGFloat = 20
+  static let descriptionFontSize: CGFloat = 15
 }
