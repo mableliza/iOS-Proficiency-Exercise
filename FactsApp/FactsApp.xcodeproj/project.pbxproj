@@ -12,6 +12,11 @@
 		CD6DA8D62431D07A006A834B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD6DA8D52431D07A006A834B /* Assets.xcassets */; };
 		CD6DA8D92431D07A006A834B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD6DA8D72431D07A006A834B /* LaunchScreen.storyboard */; };
 		CD6DA8EE2431DC51006A834B /* FactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6DA8ED2431DC51006A834B /* FactsViewController.swift */; };
+		CD6DA8F12431E3C3006A834B /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6DA8F02431E3C3006A834B /* AppConstants.swift */; };
+		CD6DA8F42431E511006A834B /* BaseNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6DA8F32431E511006A834B /* BaseNetworking.swift */; };
+		CD6DA8F62431E54E006A834B /* FactsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6DA8F52431E54E006A834B /* FactsAPI.swift */; };
+		CD6DA8F82431E56E006A834B /* AppStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6DA8F72431E56E006A834B /* AppStrings.swift */; };
+		CD6DA8FB2431E851006A834B /* Requestmethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6DA8FA2431E851006A834B /* Requestmethods.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		CD6DA8D82431D07A006A834B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD6DA8DA2431D07A006A834B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD6DA8ED2431DC51006A834B /* FactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsViewController.swift; sourceTree = "<group>"; };
+		CD6DA8F02431E3C3006A834B /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		CD6DA8F32431E511006A834B /* BaseNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNetworking.swift; sourceTree = "<group>"; };
+		CD6DA8F52431E54E006A834B /* FactsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsAPI.swift; sourceTree = "<group>"; };
+		CD6DA8F72431E56E006A834B /* AppStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStrings.swift; sourceTree = "<group>"; };
+		CD6DA8FA2431E851006A834B /* Requestmethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requestmethods.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +64,9 @@
 		CD6DA8CB2431D077006A834B /* FactsApp */ = {
 			isa = PBXGroup;
 			children = (
+				CD6DA8F22431E4EC006A834B /* WebServices */,
 				CD6DA8EC2431DC43006A834B /* Controllers */,
+				CD6DA8EF2431E39D006A834B /* Constants */,
 				CD6DA8CC2431D077006A834B /* AppDelegate.swift */,
 				CD6DA8D22431D077006A834B /* Main.storyboard */,
 				CD6DA8D52431D07A006A834B /* Assets.xcassets */,
@@ -70,6 +82,25 @@
 				CD6DA8ED2431DC51006A834B /* FactsViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CD6DA8EF2431E39D006A834B /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				CD6DA8F02431E3C3006A834B /* AppConstants.swift */,
+				CD6DA8F72431E56E006A834B /* AppStrings.swift */,
+				CD6DA8FA2431E851006A834B /* Requestmethods.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		CD6DA8F22431E4EC006A834B /* WebServices */ = {
+			isa = PBXGroup;
+			children = (
+				CD6DA8F32431E511006A834B /* BaseNetworking.swift */,
+				CD6DA8F52431E54E006A834B /* FactsAPI.swift */,
+			);
+			path = WebServices;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,7 +174,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD6DA8F82431E56E006A834B /* AppStrings.swift in Sources */,
 				CD6DA8CD2431D077006A834B /* AppDelegate.swift in Sources */,
+				CD6DA8F62431E54E006A834B /* FactsAPI.swift in Sources */,
+				CD6DA8F12431E3C3006A834B /* AppConstants.swift in Sources */,
+				CD6DA8F42431E511006A834B /* BaseNetworking.swift in Sources */,
+				CD6DA8FB2431E851006A834B /* Requestmethods.swift in Sources */,
 				CD6DA8EE2431DC51006A834B /* FactsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
