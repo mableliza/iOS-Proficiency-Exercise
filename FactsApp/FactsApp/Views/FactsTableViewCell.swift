@@ -35,7 +35,6 @@ class FactsTableViewCell: UITableViewCell {
     let imageView = UIImageView()
     imageView.clipsToBounds = true
     imageView.translatesAutoresizingMaskIntoConstraints = false
-    imageView.layer.cornerRadius = 10
     imageView.contentMode = .scaleAspectFit
     return imageView
   }()
@@ -76,8 +75,8 @@ class FactsTableViewCell: UITableViewCell {
     titleLabel.topAnchor.constraint(equalTo:margins.topAnchor, constant: 5).isActive = true
     titleLabel.leadingAnchor.constraint(equalTo:margins.leadingAnchor, constant: 5).isActive = true
     titleLabel.trailingAnchor.constraint(equalTo:margins.trailingAnchor, constant: 5).isActive = true
-    factImageView.widthAnchor.constraint(equalToConstant: 100).isActive = true
-    factImageView.heightAnchor.constraint(equalToConstant: 80).isActive = true
+    factImageView.widthAnchor.constraint(equalToConstant: 80).isActive = true
+    factImageView.heightAnchor.constraint(equalToConstant: 60).isActive = true
     stackView.leadingAnchor.constraint(equalToSystemSpacingAfter: titleLabel.leadingAnchor, multiplier: 0).isActive = true
     stackView.trailingAnchor.constraint(equalToSystemSpacingAfter: titleLabel.trailingAnchor, multiplier: 0).isActive = true
     stackView.topAnchor.constraint(equalTo:titleLabel.bottomAnchor, constant: 10).isActive = true
@@ -86,7 +85,7 @@ class FactsTableViewCell: UITableViewCell {
   
   /// Sets the data for the subviews.
   /// - Parameter fact: data object for the cell.
-  func setData(fact:Facts) {
+  func setData(fact: Facts) {
     self.titleLabel.text = fact.title
     self.descriptionLabel.text = fact.description
     self.factImageView.sd_setImage(with: URL(string: fact.imageHref), placeholderImage: #imageLiteral(resourceName: "placeholder"), options: [])
