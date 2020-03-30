@@ -12,6 +12,12 @@ class FactsViewController: UIViewController {
   
   let tableView = UITableView()
   var country:Country?
+  lazy var refreshControl: UIRefreshControl = {
+    let refreshControl = UIRefreshControl()
+    refreshControl.addTarget(self, action: #selector(self.handleRefresh(_:)),for: .valueChanged)
+    refreshControl.tintColor = #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1)
+    return refreshControl
+  }()
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -36,18 +42,34 @@ class FactsViewController: UIViewController {
     tableView.estimatedRowHeight = AppConstants.rowHeight
     tableView.rowHeight = UITableView.automaticDimension
     tableView.showsVerticalScrollIndicator = false
+    tableView.refreshControl = refreshControl
     tableView.reloadData()
   }
   
   /// Gets the data from service call and reloads the tableview
   func setData() {
     FactsAPI.shared.getFacts() { (success,country,message) in
+      self.refreshControl.endRefreshing()
       if success {
         self.country = country
         self.title = country?.title
+      } else {
+        self.showErrorAlert(message: message)
       }
       self.tableView.reloadData()
     }
+  }
+  
+  /// Tableview refresh method
+  @objc private func handleRefresh(_ refresh: UIRefreshControl) {
+    setData()
+  }
+  
+  /// Get an alertviewcontroller to show eoor message when network request returns an error
+  func showErrorAlert(message: String) {
+    let alertVC = UIAlertController(title: nil, message: message, preferredStyle: .alert)
+    alertVC.addAction(UIAlertAction(title: ok, style: .default))
+    self.present(alertVC, animated: true)
   }
   
 }

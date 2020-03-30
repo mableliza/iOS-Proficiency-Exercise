@@ -21,6 +21,7 @@
 		CD6DA8FE2431EA7F006A834B /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6DA8FD2431EA7F006A834B /* Country.swift */; };
 		CD6DA9002431EAA2006A834B /* Fact.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6DA8FF2431EAA2006A834B /* Fact.swift */; };
 		CD6DA9022431EACE006A834B /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6DA9012431EACE006A834B /* APIKeys.swift */; };
+		CD6DA9042431F443006A834B /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6DA9032431F443006A834B /* AppColors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		CD6DA8FD2431EA7F006A834B /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		CD6DA8FF2431EAA2006A834B /* Fact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fact.swift; sourceTree = "<group>"; };
 		CD6DA9012431EACE006A834B /* APIKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
+		CD6DA9032431F443006A834B /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 		EF9657FBFB3A688B49E7AC20 /* Pods_FactsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FactsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD0C3B27C2C47F438C878F0F /* Pods-FactsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FactsApp.release.xcconfig"; path = "Target Support Files/Pods-FactsApp/Pods-FactsApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -113,6 +115,7 @@
 				CD6DA8F72431E56E006A834B /* AppStrings.swift */,
 				CD6DA8FA2431E851006A834B /* Requestmethods.swift */,
 				CD6DA9012431EACE006A834B /* APIKeys.swift */,
+				CD6DA9032431F443006A834B /* AppColors.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 				CD6DA8CD2431D077006A834B /* AppDelegate.swift in Sources */,
 				CD6DA8F62431E54E006A834B /* FactsAPI.swift in Sources */,
 				CD6DA8F12431E3C3006A834B /* AppConstants.swift in Sources */,
+				CD6DA9042431F443006A834B /* AppColors.swift in Sources */,
 				CD6DA9002431EAA2006A834B /* Fact.swift in Sources */,
 				CD6DA8FE2431EA7F006A834B /* Country.swift in Sources */,
 				CD6DA9022431EACE006A834B /* APIKeys.swift in Sources */,
