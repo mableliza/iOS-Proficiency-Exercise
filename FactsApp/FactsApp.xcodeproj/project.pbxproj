@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		CD6DA8CD2431D077006A834B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6DA8CC2431D077006A834B /* AppDelegate.swift */; };
-		CD6DA8CF2431D077006A834B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6DA8CE2431D077006A834B /* SceneDelegate.swift */; };
 		CD6DA8D12431D077006A834B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6DA8D02431D077006A834B /* ViewController.swift */; };
 		CD6DA8D42431D077006A834B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD6DA8D22431D077006A834B /* Main.storyboard */; };
 		CD6DA8D62431D07A006A834B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD6DA8D52431D07A006A834B /* Assets.xcassets */; };
@@ -18,7 +17,6 @@
 /* Begin PBXFileReference section */
 		CD6DA8C92431D077006A834B /* FactsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FactsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD6DA8CC2431D077006A834B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CD6DA8CE2431D077006A834B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CD6DA8D02431D077006A834B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CD6DA8D32431D077006A834B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CD6DA8D52431D07A006A834B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,7 +55,6 @@
 			isa = PBXGroup;
 			children = (
 				CD6DA8CC2431D077006A834B /* AppDelegate.swift */,
-				CD6DA8CE2431D077006A834B /* SceneDelegate.swift */,
 				CD6DA8D02431D077006A834B /* ViewController.swift */,
 				CD6DA8D22431D077006A834B /* Main.storyboard */,
 				CD6DA8D52431D07A006A834B /* Assets.xcassets */,
@@ -140,7 +137,6 @@
 			files = (
 				CD6DA8D12431D077006A834B /* ViewController.swift in Sources */,
 				CD6DA8CD2431D077006A834B /* AppDelegate.swift in Sources */,
-				CD6DA8CF2431D077006A834B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +288,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.softvision.FactsApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -309,7 +305,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.softvision.FactsApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
