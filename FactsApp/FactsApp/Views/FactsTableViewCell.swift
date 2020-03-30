@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class FactsTableViewCell: UITableViewCell {
   
@@ -88,6 +89,7 @@ class FactsTableViewCell: UITableViewCell {
   func setData(fact:Facts) {
     self.titleLabel.text = fact.title
     self.descriptionLabel.text = fact.description
+    self.factImageView.sd_setImage(with: URL(string: fact.imageHref), placeholderImage: #imageLiteral(resourceName: "placeholder"), options: [])
   }
   
 }
