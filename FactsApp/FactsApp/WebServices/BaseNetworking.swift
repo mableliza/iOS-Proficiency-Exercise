@@ -7,12 +7,13 @@
 //
 
 import Foundation
+import SwiftyJSON
 
 class BaseNetworking {
   
   private var session: URLSession!
-  typealias CompletionHandler = (_ response: Any?, _ error: Error?, _ responseHeader: URLResponse?) -> Void
-  typealias ResponseHandler = (_ data: Any?) -> Void
+  typealias CompletionHandler = (_ response: JSON?, _ error: Error?) -> Void
+  typealias ResponseHandler = (_ data: JSON?) -> Void
   
   init() {
     session = URLSession(configuration: .default)
@@ -35,14 +36,14 @@ class BaseNetworking {
       
       DispatchQueue.main.async(execute: {
         if let error = error {
-          handler(nil,error, response)
+          handler(nil,error)
         }
         guard let data = data else {
-          handler(nil,error, response)
+          handler(nil,error)
           return
         }
         self.handleResponseresponse(data: data) { data in
-          handler(data, error, response)
+          handler(data, error)
         }
       })
     }
@@ -56,12 +57,8 @@ class BaseNetworking {
     if let data = data {
       if let value = String(data: data, encoding: String.Encoding.ascii) {
         if let jsonData = value.data(using: String.Encoding.utf8) {
-          do {
-            let json = try JSONSerialization.jsonObject(with: jsonData, options: []) as! [String: Any]
-            responseHandler(json)
-          } catch {
-            responseHandler(nil)
-          }
+          let json = JSON(jsonData)
+          responseHandler(json)
         }
       }
     } else {
