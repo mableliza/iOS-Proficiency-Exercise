@@ -12,6 +12,7 @@ let factsUrl = "https://dl.dropboxusercontent.com/s/2iodh4vg0eortkl/facts.json"
 let errorMsg = "Something went wrong"
 let emptyString = ""
 let ok = "OK"
+let cellIdentifier = "cell"
 
 /// Fonts
 let titleFont = "Helvetica-Bold"

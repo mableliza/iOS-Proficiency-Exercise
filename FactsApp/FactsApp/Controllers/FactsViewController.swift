@@ -15,7 +15,7 @@ class FactsViewController: UIViewController {
   lazy var refreshControl: UIRefreshControl = {
     let refreshControl = UIRefreshControl()
     refreshControl.addTarget(self, action: #selector(self.handleRefresh(_:)),for: .valueChanged)
-    refreshControl.tintColor = #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1)
+    refreshControl.tintColor = AppColors.refreshTintColor
     return refreshControl
   }()
   
@@ -43,6 +43,7 @@ class FactsViewController: UIViewController {
     tableView.rowHeight = UITableView.automaticDimension
     tableView.showsVerticalScrollIndicator = false
     tableView.refreshControl = refreshControl
+    tableView.register(FactsTableViewCell.self, forCellReuseIdentifier: cellIdentifier)
     tableView.reloadData()
   }
   
@@ -85,10 +86,8 @@ extension FactsViewController: UITableViewDataSource {
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "cell")
-    cell.detailTextLabel?.numberOfLines = 0
-    cell.textLabel?.text = country?.facts[indexPath.row].title
-    cell.detailTextLabel?.text = country?.facts[indexPath.row].description
+    let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! FactsTableViewCell
+    cell.setData(fact: country!.facts[indexPath.row])
     return cell
   }
 }

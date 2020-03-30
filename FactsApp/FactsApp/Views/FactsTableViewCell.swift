@@ -69,6 +69,7 @@ class FactsTableViewCell: UITableViewCell {
     fatalError("init(coder:) has not been implemented")
   }
   
+  /// Set the constraints for all the subviews
   func setConstraints() {
     let margins = contentView.layoutMarginsGuide
     titleLabel.topAnchor.constraint(equalTo:margins.topAnchor, constant: 5).isActive = true
@@ -82,5 +83,11 @@ class FactsTableViewCell: UITableViewCell {
     stackView.bottomAnchor.constraint(equalTo: margins.bottomAnchor, constant:  -10).isActive = true
   }
   
+  /// Sets the data for the subviews.
+  /// - Parameter fact: data object for the cell.
+  func setData(fact:Facts) {
+    self.titleLabel.text = fact.title
+    self.descriptionLabel.text = fact.description
+  }
   
 }
