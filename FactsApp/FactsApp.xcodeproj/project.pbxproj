@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A24C264B51A73D1FD167F9C7 /* Pods_FactsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF9657FBFB3A688B49E7AC20 /* Pods_FactsApp.framework */; };
 		CD6DA8CD2431D077006A834B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6DA8CC2431D077006A834B /* AppDelegate.swift */; };
 		CD6DA8D42431D077006A834B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD6DA8D22431D077006A834B /* Main.storyboard */; };
 		CD6DA8D62431D07A006A834B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD6DA8D52431D07A006A834B /* Assets.xcassets */; };
@@ -17,9 +18,13 @@
 		CD6DA8F62431E54E006A834B /* FactsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6DA8F52431E54E006A834B /* FactsAPI.swift */; };
 		CD6DA8F82431E56E006A834B /* AppStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6DA8F72431E56E006A834B /* AppStrings.swift */; };
 		CD6DA8FB2431E851006A834B /* Requestmethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6DA8FA2431E851006A834B /* Requestmethods.swift */; };
+		CD6DA8FE2431EA7F006A834B /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6DA8FD2431EA7F006A834B /* Country.swift */; };
+		CD6DA9002431EAA2006A834B /* Fact.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6DA8FF2431EAA2006A834B /* Fact.swift */; };
+		CD6DA9022431EACE006A834B /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6DA9012431EACE006A834B /* APIKeys.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6B4890C7210A12A63E5D6EA4 /* Pods-FactsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FactsApp.debug.xcconfig"; path = "Target Support Files/Pods-FactsApp/Pods-FactsApp.debug.xcconfig"; sourceTree = "<group>"; };
 		CD6DA8C92431D077006A834B /* FactsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FactsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD6DA8CC2431D077006A834B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD6DA8D32431D077006A834B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -32,6 +37,11 @@
 		CD6DA8F52431E54E006A834B /* FactsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsAPI.swift; sourceTree = "<group>"; };
 		CD6DA8F72431E56E006A834B /* AppStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStrings.swift; sourceTree = "<group>"; };
 		CD6DA8FA2431E851006A834B /* Requestmethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requestmethods.swift; sourceTree = "<group>"; };
+		CD6DA8FD2431EA7F006A834B /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		CD6DA8FF2431EAA2006A834B /* Fact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fact.swift; sourceTree = "<group>"; };
+		CD6DA9012431EACE006A834B /* APIKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
+		EF9657FBFB3A688B49E7AC20 /* Pods_FactsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FactsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD0C3B27C2C47F438C878F0F /* Pods-FactsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FactsApp.release.xcconfig"; path = "Target Support Files/Pods-FactsApp/Pods-FactsApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,17 +49,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A24C264B51A73D1FD167F9C7 /* Pods_FactsApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		787D0E292968FD99713A64D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF9657FBFB3A688B49E7AC20 /* Pods_FactsApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CD6DA8C02431D077006A834B = {
 			isa = PBXGroup;
 			children = (
 				CD6DA8CB2431D077006A834B /* FactsApp */,
 				CD6DA8CA2431D077006A834B /* Products */,
+				D6EAD4B0EC057844892E059A /* Pods */,
+				787D0E292968FD99713A64D8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,8 +85,9 @@
 		CD6DA8CB2431D077006A834B /* FactsApp */ = {
 			isa = PBXGroup;
 			children = (
-				CD6DA8F22431E4EC006A834B /* WebServices */,
+				CD6DA8FC2431EA69006A834B /* Models */,
 				CD6DA8EC2431DC43006A834B /* Controllers */,
+				CD6DA8F22431E4EC006A834B /* WebServices */,
 				CD6DA8EF2431E39D006A834B /* Constants */,
 				CD6DA8CC2431D077006A834B /* AppDelegate.swift */,
 				CD6DA8D22431D077006A834B /* Main.storyboard */,
@@ -90,6 +112,7 @@
 				CD6DA8F02431E3C3006A834B /* AppConstants.swift */,
 				CD6DA8F72431E56E006A834B /* AppStrings.swift */,
 				CD6DA8FA2431E851006A834B /* Requestmethods.swift */,
+				CD6DA9012431EACE006A834B /* APIKeys.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -103,6 +126,24 @@
 			path = WebServices;
 			sourceTree = "<group>";
 		};
+		CD6DA8FC2431EA69006A834B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CD6DA8FD2431EA7F006A834B /* Country.swift */,
+				CD6DA8FF2431EAA2006A834B /* Fact.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D6EAD4B0EC057844892E059A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6B4890C7210A12A63E5D6EA4 /* Pods-FactsApp.debug.xcconfig */,
+				FD0C3B27C2C47F438C878F0F /* Pods-FactsApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -110,9 +151,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CD6DA8DD2431D07A006A834B /* Build configuration list for PBXNativeTarget "FactsApp" */;
 			buildPhases = (
+				E0673E9505A0841D10B00CB0 /* [CP] Check Pods Manifest.lock */,
 				CD6DA8C52431D077006A834B /* Sources */,
 				CD6DA8C62431D077006A834B /* Frameworks */,
 				CD6DA8C72431D077006A834B /* Resources */,
+				CF2B12A62743F84F22B0EEB0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -169,6 +212,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		CF2B12A62743F84F22B0EEB0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FactsApp/Pods-FactsApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FactsApp/Pods-FactsApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FactsApp/Pods-FactsApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0673E9505A0841D10B00CB0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FactsApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CD6DA8C52431D077006A834B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -178,6 +263,9 @@
 				CD6DA8CD2431D077006A834B /* AppDelegate.swift in Sources */,
 				CD6DA8F62431E54E006A834B /* FactsAPI.swift in Sources */,
 				CD6DA8F12431E3C3006A834B /* AppConstants.swift in Sources */,
+				CD6DA9002431EAA2006A834B /* Fact.swift in Sources */,
+				CD6DA8FE2431EA7F006A834B /* Country.swift in Sources */,
+				CD6DA9022431EACE006A834B /* APIKeys.swift in Sources */,
 				CD6DA8F42431E511006A834B /* BaseNetworking.swift in Sources */,
 				CD6DA8FB2431E851006A834B /* Requestmethods.swift in Sources */,
 				CD6DA8EE2431DC51006A834B /* FactsViewController.swift in Sources */,
@@ -322,6 +410,7 @@
 		};
 		CD6DA8DE2431D07A006A834B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B4890C7210A12A63E5D6EA4 /* Pods-FactsApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -339,6 +428,7 @@
 		};
 		CD6DA8DF2431D07A006A834B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD0C3B27C2C47F438C878F0F /* Pods-FactsApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
