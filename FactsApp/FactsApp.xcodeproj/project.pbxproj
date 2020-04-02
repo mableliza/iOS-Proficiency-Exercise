@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A24C264B51A73D1FD167F9C7 /* Pods_FactsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF9657FBFB3A688B49E7AC20 /* Pods_FactsApp.framework */; };
+		CD6BB48B24360FC500882040 /* FactsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6BB48A24360FC500882040 /* FactsAppTests.swift */; };
 		CD6DA8CD2431D077006A834B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6DA8CC2431D077006A834B /* AppDelegate.swift */; };
 		CD6DA8D62431D07A006A834B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD6DA8D52431D07A006A834B /* Assets.xcassets */; };
 		CD6DA8D92431D07A006A834B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD6DA8D72431D07A006A834B /* LaunchScreen.storyboard */; };
@@ -24,8 +25,21 @@
 		CD6DA9072431F8E6006A834B /* FactsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6DA9062431F8E6006A834B /* FactsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		CD6BB48D24360FC500882040 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD6DA8C12431D077006A834B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD6DA8C82431D077006A834B;
+			remoteInfo = FactsApp;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		6B4890C7210A12A63E5D6EA4 /* Pods-FactsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FactsApp.debug.xcconfig"; path = "Target Support Files/Pods-FactsApp/Pods-FactsApp.debug.xcconfig"; sourceTree = "<group>"; };
+		CD6BB48824360FC500882040 /* FactsAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FactsAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD6BB48A24360FC500882040 /* FactsAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsAppTests.swift; sourceTree = "<group>"; };
+		CD6BB48C24360FC500882040 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD6DA8C92431D077006A834B /* FactsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FactsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD6DA8CC2431D077006A834B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD6DA8D52431D07A006A834B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -47,6 +61,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		CD6BB48524360FC500882040 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CD6DA8C62431D077006A834B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -66,10 +87,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CD6BB48924360FC500882040 /* FactsAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				CD6BB48A24360FC500882040 /* FactsAppTests.swift */,
+				CD6BB48C24360FC500882040 /* Info.plist */,
+			);
+			path = FactsAppTests;
+			sourceTree = "<group>";
+		};
 		CD6DA8C02431D077006A834B = {
 			isa = PBXGroup;
 			children = (
 				CD6DA8CB2431D077006A834B /* FactsApp */,
+				CD6BB48924360FC500882040 /* FactsAppTests */,
 				CD6DA8CA2431D077006A834B /* Products */,
 				D6EAD4B0EC057844892E059A /* Pods */,
 				787D0E292968FD99713A64D8 /* Frameworks */,
@@ -80,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				CD6DA8C92431D077006A834B /* FactsApp.app */,
+				CD6BB48824360FC500882040 /* FactsAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -158,6 +190,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		CD6BB48724360FC500882040 /* FactsAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD6BB49124360FC500882040 /* Build configuration list for PBXNativeTarget "FactsAppTests" */;
+			buildPhases = (
+				CD6BB48424360FC500882040 /* Sources */,
+				CD6BB48524360FC500882040 /* Frameworks */,
+				CD6BB48624360FC500882040 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD6BB48E24360FC500882040 /* PBXTargetDependency */,
+			);
+			name = FactsAppTests;
+			productName = FactsAppTests;
+			productReference = CD6BB48824360FC500882040 /* FactsAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		CD6DA8C82431D077006A834B /* FactsApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CD6DA8DD2431D07A006A834B /* Build configuration list for PBXNativeTarget "FactsApp" */;
@@ -187,6 +237,10 @@
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = Mable;
 				TargetAttributes = {
+					CD6BB48724360FC500882040 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = CD6DA8C82431D077006A834B;
+					};
 					CD6DA8C82431D077006A834B = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
@@ -206,11 +260,19 @@
 			projectRoot = "";
 			targets = (
 				CD6DA8C82431D077006A834B /* FactsApp */,
+				CD6BB48724360FC500882040 /* FactsAppTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		CD6BB48624360FC500882040 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CD6DA8C72431D077006A834B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -265,6 +327,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		CD6BB48424360FC500882040 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD6BB48B24360FC500882040 /* FactsAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CD6DA8C52431D077006A834B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -286,6 +356,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		CD6BB48E24360FC500882040 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD6DA8C82431D077006A834B /* FactsApp */;
+			targetProxy = CD6BB48D24360FC500882040 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		CD6DA8D72431D07A006A834B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -298,6 +376,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		CD6BB48F24360FC500882040 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FactsAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.softvision.FactsAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FactsApp.app/FactsApp";
+			};
+			name = Debug;
+		};
+		CD6BB49024360FC500882040 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FactsAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.softvision.FactsAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FactsApp.app/FactsApp";
+			};
+			name = Release;
+		};
 		CD6DA8DB2431D07A006A834B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -453,6 +569,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CD6BB49124360FC500882040 /* Build configuration list for PBXNativeTarget "FactsAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD6BB48F24360FC500882040 /* Debug */,
+				CD6BB49024360FC500882040 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CD6DA8C42431D077006A834B /* Build configuration list for PBXProject "FactsApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
