@@ -8,3 +8,6 @@ target 'FactsApp' do
   pod 'SDWebImage'
 
 end
+target 'FactsAppTests' do
+pod 'SwiftyJSON'    
+  end
