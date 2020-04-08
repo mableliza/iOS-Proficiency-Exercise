@@ -12,6 +12,10 @@
 		CD69FEA5243D821E000A4B5E /* FactsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD69FEA4243D821E000A4B5E /* FactsViewModel.swift */; };
 		CD69FEA6243D89F8000A4B5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6DA8CC2431D077006A834B /* AppDelegate.swift */; };
 		CD69FEA8243D8DCD000A4B5E /* FactsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD69FEA7243D8DCD000A4B5E /* FactsViewModelTests.swift */; };
+		CD69FEB2243DAD6A000A4B5E /* MockURLSessionSuccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD69FEB1243DAD6A000A4B5E /* MockURLSessionSuccess.swift */; };
+		CD69FEB4243DAD82000A4B5E /* MockURLSessionFailure.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD69FEB3243DAD82000A4B5E /* MockURLSessionFailure.swift */; };
+		CD69FEB8243DB159000A4B5E /* MockBaseNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD69FEAF243DACDC000A4B5E /* MockBaseNetworking.swift */; };
+		CD69FEBA243DB218000A4B5E /* FactsAppURLSessionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD69FEB9243DB218000A4B5E /* FactsAppURLSessionTests.swift */; };
 		CD6BB48B24360FC500882040 /* FactsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6BB48A24360FC500882040 /* FactsAppTests.swift */; };
 		CD6BB4942436112200882040 /* MockFactsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6BB4932436112200882040 /* MockFactsAPI.swift */; };
 		CD6BB4962436144300882040 /* FactsAppMockDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6BB4952436144300882040 /* FactsAppMockDataTests.swift */; };
@@ -47,6 +51,10 @@
 		AB74C57A38E968DD9DEF6123 /* Pods-FactsAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FactsAppTests.release.xcconfig"; path = "Target Support Files/Pods-FactsAppTests/Pods-FactsAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		CD69FEA4243D821E000A4B5E /* FactsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsViewModel.swift; sourceTree = "<group>"; };
 		CD69FEA7243D8DCD000A4B5E /* FactsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsViewModelTests.swift; sourceTree = "<group>"; };
+		CD69FEAF243DACDC000A4B5E /* MockBaseNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockBaseNetworking.swift; sourceTree = "<group>"; };
+		CD69FEB1243DAD6A000A4B5E /* MockURLSessionSuccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSessionSuccess.swift; sourceTree = "<group>"; };
+		CD69FEB3243DAD82000A4B5E /* MockURLSessionFailure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSessionFailure.swift; sourceTree = "<group>"; };
+		CD69FEB9243DB218000A4B5E /* FactsAppURLSessionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsAppURLSessionTests.swift; sourceTree = "<group>"; };
 		CD6BB48824360FC500882040 /* FactsAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FactsAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD6BB48A24360FC500882040 /* FactsAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsAppTests.swift; sourceTree = "<group>"; };
 		CD6BB48C24360FC500882040 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -113,8 +121,9 @@
 			isa = PBXGroup;
 			children = (
 				CD6BB48A24360FC500882040 /* FactsAppTests.swift */,
-				CD6BB4952436144300882040 /* FactsAppMockDataTests.swift */,
 				CD69FEA7243D8DCD000A4B5E /* FactsViewModelTests.swift */,
+				CD6BB4952436144300882040 /* FactsAppMockDataTests.swift */,
+				CD69FEB9243DB218000A4B5E /* FactsAppURLSessionTests.swift */,
 				CD6BB492243610EC00882040 /* Mocks */,
 				CD6BB48C24360FC500882040 /* Info.plist */,
 			);
@@ -125,6 +134,9 @@
 			isa = PBXGroup;
 			children = (
 				CD6BB4932436112200882040 /* MockFactsAPI.swift */,
+				CD69FEAF243DACDC000A4B5E /* MockBaseNetworking.swift */,
+				CD69FEB1243DAD6A000A4B5E /* MockURLSessionSuccess.swift */,
+				CD69FEB3243DAD82000A4B5E /* MockURLSessionFailure.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -382,10 +394,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD69FEB8243DB159000A4B5E /* MockBaseNetworking.swift in Sources */,
+				CD69FEB2243DAD6A000A4B5E /* MockURLSessionSuccess.swift in Sources */,
 				CD69FEA8243D8DCD000A4B5E /* FactsViewModelTests.swift in Sources */,
 				CD6BB4942436112200882040 /* MockFactsAPI.swift in Sources */,
+				CD69FEBA243DB218000A4B5E /* FactsAppURLSessionTests.swift in Sources */,
 				CD6BB48B24360FC500882040 /* FactsAppTests.swift in Sources */,
 				CD6BB4962436144300882040 /* FactsAppMockDataTests.swift in Sources */,
+				CD69FEB4243DAD82000A4B5E /* MockURLSessionFailure.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
