@@ -11,7 +11,7 @@ import UIKit
 class FactsViewController: UIViewController {
   
   let tableView = UITableView()
-  var country:Country?
+  var viewModel: FactsViewModel!
   lazy var refreshControl: UIRefreshControl = {
     let refreshControl = UIRefreshControl()
     refreshControl.addTarget(self, action: #selector(self.handleRefresh(_:)),for: .valueChanged)
@@ -23,8 +23,15 @@ class FactsViewController: UIViewController {
     super.viewDidLoad()
     view.backgroundColor = .white
     self.view.backgroundColor = .white
+    setViewModel()
     setupTableview()
     setData()
+  }
+  
+  /// Initialise viewModel and add delegate
+  func setViewModel() {
+    self.viewModel = FactsViewModel()
+    viewModel.delegate = self
   }
   
   /// Setup tableview properties and constraints
@@ -47,18 +54,14 @@ class FactsViewController: UIViewController {
     tableView.reloadData()
   }
   
-  /// Gets the data from service call and reloads the tableview
+  /// Calls viewModel to initiate network call
   func setData() {
-    FactsAPI.shared.getFacts() { (success,country,message) in
-      self.refreshControl.endRefreshing()
-      if success {
-        self.country = country
-        self.title = country?.title
-      } else {
-        self.showErrorAlert(message: message)
-      }
-      self.tableView.reloadData()
-    }
+    viewModel.setData()
+  }
+  
+  /// Handles title for the page
+  func setTitle() {
+    self.title = viewModel.getTitle()
   }
   
   /// Tableview refresh method
@@ -79,15 +82,31 @@ class FactsViewController: UIViewController {
 extension FactsViewController: UITableViewDataSource {
   
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    guard let country = self.country else {
-      return 0
-    }
-    return country.facts.count
+    return viewModel.getNumberOfRows()
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! FactsTableViewCell
-    cell.setData(fact: country!.facts[indexPath.row])
+    cell.setData(fact: viewModel.country!.facts[indexPath.row])
     return cell
   }
+}
+
+//MARK:- ViewModel delegate methods
+extension FactsViewController: FactsDelegate {
+  
+  /// Handles API success
+  func getFactsSuccessful() {
+    self.refreshControl.endRefreshing()
+    setTitle()
+    tableView.reloadData()
+  }
+  
+  ///Handles API call failure
+  func getFactsFailure(message: String) {
+    self.refreshControl.endRefreshing()
+    self.showErrorAlert(message: message)
+    tableView.reloadData()
+  }
+  
 }
