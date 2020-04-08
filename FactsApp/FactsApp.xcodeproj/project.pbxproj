@@ -10,10 +10,10 @@
 		75474C883AA35344F63EA85F /* libPods-FactsAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30AEDD19DCC52B2A8476C198 /* libPods-FactsAppTests.a */; };
 		A24C264B51A73D1FD167F9C7 /* Pods_FactsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF9657FBFB3A688B49E7AC20 /* Pods_FactsApp.framework */; };
 		CD69FEA5243D821E000A4B5E /* FactsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD69FEA4243D821E000A4B5E /* FactsViewModel.swift */; };
+		CD69FEA6243D89F8000A4B5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6DA8CC2431D077006A834B /* AppDelegate.swift */; };
 		CD6BB48B24360FC500882040 /* FactsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6BB48A24360FC500882040 /* FactsAppTests.swift */; };
 		CD6BB4942436112200882040 /* MockFactsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6BB4932436112200882040 /* MockFactsAPI.swift */; };
 		CD6BB4962436144300882040 /* FactsAppMockDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6BB4952436144300882040 /* FactsAppMockDataTests.swift */; };
-		CD6DA8CD2431D077006A834B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6DA8CC2431D077006A834B /* AppDelegate.swift */; };
 		CD6DA8D62431D07A006A834B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD6DA8D52431D07A006A834B /* Assets.xcassets */; };
 		CD6DA8D92431D07A006A834B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD6DA8D72431D07A006A834B /* LaunchScreen.storyboard */; };
 		CD6DA8EE2431DC51006A834B /* FactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6DA8ED2431DC51006A834B /* FactsViewController.swift */; };
@@ -150,9 +150,8 @@
 			isa = PBXGroup;
 			children = (
 				CD6DA8FC2431EA69006A834B /* Models */,
-				CD69FEA3243D81AE000A4B5E /* ViewModels */,
 				CD6DA9052431F8B5006A834B /* Views */,
-				CD6DA8EC2431DC43006A834B /* Controllers */,
+				CD69FEA3243D81AE000A4B5E /* ViewModels */,
 				CD6DA8F22431E4EC006A834B /* WebServices */,
 				CD6DA8EF2431E39D006A834B /* Constants */,
 				CD6DA8CC2431D077006A834B /* AppDelegate.swift */,
@@ -161,14 +160,6 @@
 				CD6DA8DA2431D07A006A834B /* Info.plist */,
 			);
 			path = FactsApp;
-			sourceTree = "<group>";
-		};
-		CD6DA8EC2431DC43006A834B /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				CD6DA8ED2431DC51006A834B /* FactsViewController.swift */,
-			);
-			path = Controllers;
 			sourceTree = "<group>";
 		};
 		CD6DA8EF2431E39D006A834B /* Constants */ = {
@@ -205,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				CD6DA9062431F8E6006A834B /* FactsTableViewCell.swift */,
+				CD6DA8ED2431DC51006A834B /* FactsViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -398,7 +390,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD6DA8F82431E56E006A834B /* AppStrings.swift in Sources */,
-				CD6DA8CD2431D077006A834B /* AppDelegate.swift in Sources */,
 				CD6DA8F62431E54E006A834B /* FactsAPI.swift in Sources */,
 				CD6DA9072431F8E6006A834B /* FactsTableViewCell.swift in Sources */,
 				CD6DA8F12431E3C3006A834B /* AppConstants.swift in Sources */,
@@ -406,6 +397,7 @@
 				CD6DA9002431EAA2006A834B /* Fact.swift in Sources */,
 				CD69FEA5243D821E000A4B5E /* FactsViewModel.swift in Sources */,
 				CD6DA8FE2431EA7F006A834B /* Country.swift in Sources */,
+				CD69FEA6243D89F8000A4B5E /* AppDelegate.swift in Sources */,
 				CD6DA9022431EACE006A834B /* APIKeys.swift in Sources */,
 				CD6DA8F42431E511006A834B /* BaseNetworking.swift in Sources */,
 				CD6DA8FB2431E851006A834B /* Requestmethods.swift in Sources */,
