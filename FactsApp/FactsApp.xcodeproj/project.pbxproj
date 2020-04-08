@@ -117,6 +117,22 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		CD69FEBB243DB563000A4B5E /* TableCells */ = {
+			isa = PBXGroup;
+			children = (
+				CD6DA9062431F8E6006A834B /* FactsTableViewCell.swift */,
+			);
+			path = TableCells;
+			sourceTree = "<group>";
+		};
+		CD69FEBC243DB576000A4B5E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CD6DA8ED2431DC51006A834B /* FactsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		CD6BB48924360FC500882040 /* FactsAppTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -210,8 +226,8 @@
 		CD6DA9052431F8B5006A834B /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				CD6DA9062431F8E6006A834B /* FactsTableViewCell.swift */,
-				CD6DA8ED2431DC51006A834B /* FactsViewController.swift */,
+				CD69FEBB243DB563000A4B5E /* TableCells */,
+				CD69FEBC243DB576000A4B5E /* Controllers */,
 			);
 			path = Views;
 			sourceTree = "<group>";
