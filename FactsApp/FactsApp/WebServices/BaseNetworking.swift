@@ -11,7 +11,7 @@ import SwiftyJSON
 
 class BaseNetworking {
   
-  private var session: URLSession!
+  var session: URLSession!
   typealias CompletionHandler = (_ response: JSON?, _ error: Error?) -> Void
   typealias ResponseHandler = (_ data: JSON?) -> Void
   
@@ -37,6 +37,7 @@ class BaseNetworking {
       DispatchQueue.main.async {
         if let error = error {
           handler(nil,error)
+          return
         }
         guard let data = data else {
           handler(nil,error)

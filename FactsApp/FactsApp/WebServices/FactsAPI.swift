@@ -11,7 +11,7 @@ import Foundation
 class FactsAPI {
   
   static let shared = FactsAPI()
-  let networking = BaseNetworking()
+  var networking = BaseNetworking()
   typealias FactsResponse = (_ success: Bool, _ data: Country?, _ message: String) -> Void
   
   /// Calls API methods and passes the result in closure

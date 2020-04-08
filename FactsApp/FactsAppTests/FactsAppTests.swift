@@ -30,7 +30,7 @@ class FactsAppTests: XCTestCase {
    }
    
    func testTableCellsForNoData() {
-     viewController.country = nil
+    viewController.viewModel.country = nil
      let cellCount = viewController.tableView.numberOfRows(inSection: 0)
      XCTAssert(cellCount == 0)
    }
