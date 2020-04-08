@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		75474C883AA35344F63EA85F /* libPods-FactsAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30AEDD19DCC52B2A8476C198 /* libPods-FactsAppTests.a */; };
 		A24C264B51A73D1FD167F9C7 /* Pods_FactsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF9657FBFB3A688B49E7AC20 /* Pods_FactsApp.framework */; };
+		CD69FEA5243D821E000A4B5E /* FactsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD69FEA4243D821E000A4B5E /* FactsViewModel.swift */; };
 		CD6BB48B24360FC500882040 /* FactsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6BB48A24360FC500882040 /* FactsAppTests.swift */; };
 		CD6BB4942436112200882040 /* MockFactsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6BB4932436112200882040 /* MockFactsAPI.swift */; };
 		CD6BB4962436144300882040 /* FactsAppMockDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6BB4952436144300882040 /* FactsAppMockDataTests.swift */; };
@@ -43,6 +44,7 @@
 		6B4890C7210A12A63E5D6EA4 /* Pods-FactsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FactsApp.debug.xcconfig"; path = "Target Support Files/Pods-FactsApp/Pods-FactsApp.debug.xcconfig"; sourceTree = "<group>"; };
 		6BE06CE09BEA3A06B8CF8101 /* Pods-FactsAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FactsAppTests.debug.xcconfig"; path = "Target Support Files/Pods-FactsAppTests/Pods-FactsAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AB74C57A38E968DD9DEF6123 /* Pods-FactsAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FactsAppTests.release.xcconfig"; path = "Target Support Files/Pods-FactsAppTests/Pods-FactsAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		CD69FEA4243D821E000A4B5E /* FactsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsViewModel.swift; sourceTree = "<group>"; };
 		CD6BB48824360FC500882040 /* FactsAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FactsAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD6BB48A24360FC500882040 /* FactsAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsAppTests.swift; sourceTree = "<group>"; };
 		CD6BB48C24360FC500882040 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -97,6 +99,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CD69FEA3243D81AE000A4B5E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CD69FEA4243D821E000A4B5E /* FactsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		CD6BB48924360FC500882040 /* FactsAppTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				CD6DA8FC2431EA69006A834B /* Models */,
+				CD69FEA3243D81AE000A4B5E /* ViewModels */,
 				CD6DA9052431F8B5006A834B /* Views */,
 				CD6DA8EC2431DC43006A834B /* Controllers */,
 				CD6DA8F22431E4EC006A834B /* WebServices */,
@@ -393,6 +404,7 @@
 				CD6DA8F12431E3C3006A834B /* AppConstants.swift in Sources */,
 				CD6DA9042431F443006A834B /* AppColors.swift in Sources */,
 				CD6DA9002431EAA2006A834B /* Fact.swift in Sources */,
+				CD69FEA5243D821E000A4B5E /* FactsViewModel.swift in Sources */,
 				CD6DA8FE2431EA7F006A834B /* Country.swift in Sources */,
 				CD6DA9022431EACE006A834B /* APIKeys.swift in Sources */,
 				CD6DA8F42431E511006A834B /* BaseNetworking.swift in Sources */,
